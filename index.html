@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" ahref="style.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="header"><h1>My Very First Calculator :D</h1></div>
 <div class="container">
-    <div class="display"></div>
-    <div class="operation wrapper">
+    <div class="display" id="display"><span></span></div>
+    <div class="buttonswrapper">
+        <div class="opwrapper">
         <button class="operation" id="add">+</button>
         <button class= "operation" id="subtract">-</button>
-        <button class= "operation" id="multiply">x</button>
+        <button class= "operation" id="multiply">*</button>
         <button class= "operation" id="divide">/</button>
-    </div>
-    <div class="number wrapper">
+        <button class="reset" id="reset">AC</button>
+        <button class ="equals" id="equals">=</button>
+        </div>
+    <div class="numwrapper">
         <button class="user" id="one">1</button>
         <button class="user" id="two">2</button>
         <button class="user" id="three">3</button>
@@ -26,8 +31,9 @@
         <button class="user" id="eight">8</button>
         <button class="user" id="nine">9</button>
         <button class="user" id="zero">0</button>
+        <button class="user" id="dot">.</button>
     </div>
-    <button id="equals">=</button>
+</div>
 </div>
 <script src="script.js"></script>
 </body>
